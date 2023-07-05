@@ -1,0 +1,34 @@
+server:
+  port: 9110
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:9000/eureka
+    register-with-eureka: true
+    fetch-registry: true
+    health-check:
+      enabled: true
+  instance:
+    prefer-ip-address: true
+
+springdoc:
+  api-docs:
+    enabled: true
+  #    path: /api-docs
+  swagger-ui:
+    enabled: true
+    path: /swagger-ui
+    groups-order: asc
+    operations-sorter: method
+    disable-swagger-default-url: true
+    display-request-duration: true
+  #  show-actuator: true
+#  default-consumes-media-type: application/json
+#  default-produces-media-type: application/json
+
+terraform:
+  cloud:
+    api:
+      url: "https://app.terraform.io/api/v2/"
+      token: "YX0oEL32J1DSRA.atlasv1.4IgymzED1X9V5pks2jO3myWgzT1nIFfyzvGVC2n2Q5zrRsGyZhuTAxYBwJoKByf2yO8"

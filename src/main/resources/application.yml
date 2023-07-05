@@ -1,0 +1,11 @@
+spring:
+  profiles:
+    active: local
+  output:
+    ansi:
+      enabled: DETECT
+  application:
+    name: tabcloudit-terraform
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
